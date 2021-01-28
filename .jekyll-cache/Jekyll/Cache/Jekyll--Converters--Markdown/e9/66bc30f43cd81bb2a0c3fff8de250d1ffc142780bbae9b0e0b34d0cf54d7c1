@@ -1,0 +1,82 @@
+I"K<h2 id="tarea-1">Tarea 1</h2>
+
+<p>​		<font size="100"></font></p>
+
+<ul>
+  <li>
+    <font size="5">Directorio `sites-available`: </font>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p><img src="/assets/img/sites-avali.png" alt="sites-avali" /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <font size="5">Directorio `sites-enablede`:</font>
+
+    <p><br /></p>
+  </li>
+</ul>
+
+<p><img src="/assets/img/sites-enab.png" alt="sites-enab" /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <font size="5">Directorios creados para `DocumentRoot`:</font>
+
+    <p><br /></p>
+  </li>
+</ul>
+
+<p><img src="/assets/img/Documentroot.png" alt="Documentroot" /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <font size="5">Archivo de configuración de `/etc/hosts`:</font>
+
+    <p><br /></p>
+  </li>
+</ul>
+
+<p><img src="/assets/img/hosts.png" alt="hosts" /></p>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <font size="5">Sitios motrados en un navegador web</font>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p><img src="/assets/img/website1.png" alt="website1" /></p>
+
+<p>​																			&lt;p align="center"&gt;     <strong><em>Website1</em></strong>   &lt;/p&gt;</p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/website2.png" alt="website2" /></p>
+
+<p>​																			&lt;p align="center"&gt;<strong><em>Website2</em></strong>&lt;/p&gt;</p>
+:ET

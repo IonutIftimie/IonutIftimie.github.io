@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-16T16:42:38+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Post de prueba</title><link href="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html" rel="alternate" type="text/html" title="Post de prueba" /><published>2020-12-04T22:15:47+01:00</published><updated>2020-12-04T22:15:47+01:00</updated><id>http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html">&lt;p&gt;Primer post (prueba)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-28T18:59:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Post de prueba</title><link href="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html" rel="alternate" type="text/html" title="Post de prueba" /><published>2020-12-04T22:15:47+01:00</published><updated>2020-12-04T22:15:47+01:00</updated><id>http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html">&lt;p&gt;Primer post (prueba)&lt;/p&gt;
 
 &lt;p&gt;Imagen de prueba:&lt;/p&gt;
 
@@ -8,4 +8,96 @@
 
 &lt;p&gt;Esto significa que cada vez más se transmite y se hace uso de los datos/información, desde datos irrelevantes como críticos, estos requieren una serie de normativas y regulaciones para que no se hagan un mal uso de ellos y por lo tanto unas medidas de seguridad para que solo se accesible para las personas autorizadas (Confidencialidad), no sea modificada por terceros o dañada (Integridad) y que se pueda tener acceso siempre que se desee (Disponibilidad).&lt;/p&gt;
 
-&lt;p&gt;A pesar de este gran incremento del tráfico de información y digitalización, mucha gente (ya sean empresario o gente común) no le está dando la importancia que se merece la seguridad informática o no quieren (costes). Si no se toman medidas de seguridad pueden perjudicar gravemente (económicamente, judicialmente o social), estas medidas de seguridad pueden ser desde simples como concienciar sobre el uso de dispositivos o como administrar y crear una contraseña de forma eficaz (la mayoría de las brechas de seguridad se debe a causa del ser humano.) hasta medidas más técnicas y caras como tener copias de seguridad semanal/mensualmente o hacer análisis contante del tráfico de red local.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Seguridad Informatica</summary></entry></feed>
+&lt;p&gt;A pesar de este gran incremento del tráfico de información y digitalización, mucha gente (ya sean empresario o gente común) no le está dando la importancia que se merece la seguridad informática o no quieren (costes). Si no se toman medidas de seguridad pueden perjudicar gravemente (económicamente, judicialmente o social), estas medidas de seguridad pueden ser desde simples como concienciar sobre el uso de dispositivos o como administrar y crear una contraseña de forma eficaz (la mayoría de las brechas de seguridad se debe a causa del ser humano.) hasta medidas más técnicas y caras como tener copias de seguridad semanal/mensualmente o hacer análisis contante del tráfico de red local.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Seguridad Informatica</summary></entry><entry><title type="html">Configuración Básica de Apache</title><link href="http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache.html" rel="alternate" type="text/html" title="Configuración Básica de Apache" /><published>2020-01-27T00:00:00+01:00</published><updated>2020-01-27T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache.html">&lt;h2 id=&quot;tarea-1&quot;&gt;Tarea 1&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sites-available&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/sites-avali.png&quot; alt=&quot;sites-avali&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sites-enablede&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/sites-enab.png&quot; alt=&quot;sites-enab&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directorios creados para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DocumentRoot&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Documentroot.png&quot; alt=&quot;Documentroot&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Archivo de configuración de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/hosts&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hosts.png&quot; alt=&quot;hosts&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sitios motrados en un navegador web:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/website1.png&quot; alt=&quot;website1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/website2.png&quot; alt=&quot;Tarea 1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tarea-2&quot;&gt;Tarea 2&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Archivo de configuración de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;website1.conf&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/alias1.png&quot; alt=&quot;alias1&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comprobación del  &lt;em&gt;alias&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/alias2.png&quot; alt=&quot;alias2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/alias3.png&quot; alt=&quot;alias3&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tarea-3&quot;&gt;Tarea 3&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Archivo de configuración de  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apache2.conf&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Redirect2.png&quot; alt=&quot;Redirect2&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comprobación:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Redirect.png&quot; alt=&quot;Redirect&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tarea-4&quot;&gt;Tarea 4&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Error 404 personalizado:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/404 (copia 1).png&quot; alt=&quot;404 (copia 1)&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Tarea 1</summary></entry><entry><title type="html">Práctica Docker</title><link href="http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker.html" rel="alternate" type="text/html" title="Práctica Docker" /><published>2020-01-27T00:00:00+01:00</published><updated>2020-01-27T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker.html">&lt;h2 id=&quot;comprobar-la-instalación-de-docker-docker-ps&quot;&gt;Comprobar la instalación de Docker &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker ps&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/comprobar.png&quot; alt=&quot;comprobar&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;construir-contenedor-con-buildsh&quot;&gt;Construir contenedor con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.sh&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/build.png&quot; alt=&quot;build&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;iniciar-el-contenedor-debugsh&quot;&gt;Iniciar el contenedor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;debug.sh&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/debug1.png&quot; alt=&quot;debug1&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Acceder a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8086/public_html/&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/debug.png&quot; alt=&quot;debug&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;comprobar-contenedores-iniciados&quot;&gt;Comprobar contenedores iniciados:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/comprobar_final.png&quot; alt=&quot;comprobar_final&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Comprobar la instalación de Docker docker ps:</summary></entry></feed>
