@@ -1,0 +1,73 @@
+I"=	<h2 id="nginx-con-docker">Nginx con Docker</h2>
+
+<p><br /></p>
+
+<h2 id="1-instalar-nginx">1. Instalar Nginx:</h2>
+
+<p><img src="/assets/img/nginx1.png" alt="nginx1" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --rm -d -p 8080:80 --name web nginx
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p><img src="/assets/img/NgxDocker2.png" alt="NgxDocker2" /></p>
+
+<p><strong><em>Parar contenedor</em></strong></p>
+
+<p><img src="/assets/img/NgxDocker3.png" alt="NgxDocker3" /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h2 id="2-añadir-html-personalizado">2. Añadir HTML personalizado:</h2>
+
+<p><img src="/assets/img/NgxDocker4.png" alt="NgxDocker4" /></p>
+
+<p><br /></p>
+
+<h2 id="3-crear-volumen-y-montar-directorio-local">3. Crear volumen y montar directorio local:</h2>
+
+<p><img src="/assets/img/NgxDocker5.png" alt="NgxDocker5" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr/share/nginx/html nginx
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p><img src="/assets/img/NgxDocker6.png" alt="NgxDocker6" /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h2 id="4-crear-una-imagen-personalizada">4. Crear una imagen personalizada:</h2>
+
+<h2 id="crear-el-fichero-con-el-siguiente-contenido">Crear el fichero con el siguiente contenido:</h2>
+
+<p><img src="/assets/img/NgxDocker7.png" alt="NgxDocker7" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM nginx:latest
+COPY ./site-content/index.html /usr/share/nginx/html/index.html
+</code></pre></div></div>
+
+<h2 id="construir-imagen">Construir imagen:</h2>
+
+<p><img src="/assets/img/NgxDocker8.png" alt="NgxDocker8" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker build -t webserver .
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h2 id="ejecutar-la-imagen-sin-crear-un-volumen">Ejecutar la imagen (Sin crear un volumen):</h2>
+
+<p><img src="/../../NgxDocker9.png" alt="NgxDocker9" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --rm -d -p 8080:80 --name web webserver
+</code></pre></div></div>
+
+:ET
