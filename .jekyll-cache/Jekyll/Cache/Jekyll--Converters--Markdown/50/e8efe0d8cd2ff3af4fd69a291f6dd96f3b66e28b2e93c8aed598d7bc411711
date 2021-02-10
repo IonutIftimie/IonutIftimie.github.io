@@ -1,0 +1,55 @@
+I"�
+<p>typora-copy-images-to: ../assets/img/
+typora-root-url: ../
+layout: post
+title:  “Práctica Django”
+categories: jekyll update</p>
+
+<h2 id="1-crear-el-directorio-del-proyecto-mkdir-django">1. Crear el directorio del proyecto <code class="language-plaintext highlighter-rouge">mkdir django</code>:</h2>
+
+<p><img src="/assets/img/mkdir_django.png" alt="mkdir_django" /></p>
+
+<p><br /></p>
+
+<h2 id="2-crear-el-fichero-dockerfile-vi-dockervile">2. Crear el fichero Dockerfile <code class="language-plaintext highlighter-rouge">vi Dockervile</code>:</h2>
+
+<p><img src="/assets/img/Dockerfile.png" alt="Dockerfile" /></p>
+
+<p><br /></p>
+
+<h2 id="3-crear-el-fichero-requirementstxt-vi-requirementstxt">3. Crear el fichero requirements.txt <code class="language-plaintext highlighter-rouge">vi requirements.txt</code>:</h2>
+
+<p><img src="/assets/img/Requirements.png" alt="Requirements" /></p>
+
+<p><br /></p>
+
+<h2 id="4-crear-el-archivo-docker-compose-vi-docker-composeyml">4. Crear el archivo docker-compose <code class="language-plaintext highlighter-rouge">vi docker-compose.yml</code>:</h2>
+
+<p><img src="/assets/img/Docker_Compose_bienx3.png" alt="Docker_Compose_bienx3" /></p>
+
+<p><br /></p>
+
+<h2 id="5-ejecutar-el-archivo-docker-compose-sudo-docker-compose-run-web-django-admin-startproject-composeexample-">5. Ejecutar el archivo docker-compose <code class="language-plaintext highlighter-rouge">sudo docker-compose run web django-admin startproject composeexample .</code></h2>
+
+<p><img src="/../media/usuari2/TOSHIBA EXT/CECIB/Puesta_en_Produccion_Segura/img/Django/Docker_Project_ejec.png" alt="Docker_Project_ejec" /><br /></p>
+
+<h2 id="6-cambiar-el-propietario-root-al-usuario-deseado-sudo-chown--r-useruser-">6. Cambiar el propietario root al usuario deseado <code class="language-plaintext highlighter-rouge">sudo chown -R $USER:$USER .</code>:</h2>
+
+<p><img src="/media/usuari2/TOSHIBA EXT/CECIB/Puesta_en_Produccion_Segura/img/Django/Chown.png" alt="Chown" /></p>
+
+<p><br /></p>
+
+<h2 id="7-cambiar-los-ajustes-de-la-base-de-datos-compossexamplesettingspy">7. Cambiar los ajustes de la base de datos <code class="language-plaintext highlighter-rouge">compossexample/settings.py</code>:</h2>
+
+<p><img src="/media/usuari2/TOSHIBA EXT/CECIB/Puesta_en_Produccion_Segura/img/Django/Settings-py_bien.png" alt="Settings-py_bien" /></p>
+
+<p><br /></p>
+
+<h2 id="8-arrancar-el-servicio-docker-compose-up">8. Arrancar el servicio <code class="language-plaintext highlighter-rouge">docker-compose up</code>:</h2>
+
+<p><img src="/media/usuari2/TOSHIBA EXT/CECIB/Puesta_en_Produccion_Segura/img/Django/up.png" alt="up" /></p>
+
+<p><br /></p>
+
+<p><img src="/media/usuari2/TOSHIBA EXT/CECIB/Puesta_en_Produccion_Segura/img/Django/Django_localhost.png" alt="Django_localhost" /></p>
+:ET

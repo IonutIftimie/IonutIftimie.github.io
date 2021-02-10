@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-10T17:43:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Práctica Wordpress</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html" rel="alternate" type="text/html" title="Práctica Wordpress" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html">&lt;h2 id=&quot;práctica-wordpress&quot;&gt;Práctica Wordpress&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-10T18:25:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Práctica Django</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html" rel="alternate" type="text/html" title="Práctica Django" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Django</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-django&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir django&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/mkdir_django-1612977875806.png&quot; alt=&quot;mkdir_django&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-crear-el-fichero-dockerfile-vi-dockervile&quot;&gt;2. Crear el fichero Dockerfile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Dockervile&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Dockerfile-1612977882938.png&quot; alt=&quot;Dockerfile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-crear-el-fichero-requirementstxt-vi-requirementstxt&quot;&gt;3. Crear el fichero requirements.txt &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi requirements.txt&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Requirements-1612977895440.png&quot; alt=&quot;Requirements&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-crear-el-archivo-docker-compose-vi-docker-composeyml&quot;&gt;4. Crear el archivo docker-compose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi docker-compose.yml&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_Compose_bienx3-1612977901600.png&quot; alt=&quot;Docker_Compose_bienx3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-ejecutar-el-archivo-docker-compose-sudo-docker-compose-run-web-django-admin-startproject-composeexample-&quot;&gt;5. Ejecutar el archivo docker-compose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose run web django-admin startproject composeexample .&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_Project_ejec.png&quot; alt=&quot;Docker_Project_ejec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-cambiar-el-propietario-root-al-usuario-deseado-sudo-chown--r-useruser-&quot;&gt;6. Cambiar el propietario root al usuario deseado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo chown -R $USER:$USER .&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Chown.png&quot; alt=&quot;Chown&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-cambiar-los-ajustes-de-la-base-de-datos-compossexamplesettingspy&quot;&gt;7. Cambiar los ajustes de la base de datos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compossexample/settings.py&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Settings-py_bien.png&quot; alt=&quot;Settings-py_bien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-arrancar-el-servicio-docker-compose-up&quot;&gt;8. Arrancar el servicio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/up.png&quot; alt=&quot;up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Django_localhost.png&quot; alt=&quot;Django_localhost&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir django:</summary></entry><entry><title type="html">Práctica Wordpress</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html" rel="alternate" type="text/html" title="Práctica Wordpress" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html">&lt;h2 id=&quot;práctica-wordpress&quot;&gt;Práctica Wordpress&lt;/h2&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
