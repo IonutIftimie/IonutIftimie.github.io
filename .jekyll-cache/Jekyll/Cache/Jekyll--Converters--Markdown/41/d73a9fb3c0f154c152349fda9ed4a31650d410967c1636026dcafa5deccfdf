@@ -1,0 +1,26 @@
+I"�<h2 id="práctica-wordpress">Práctica Wordpress</h2>
+
+<p><br /></p>
+
+<h2 id="1-crear-el-directorio-del-proyecto-mkdir-my_wordpress">1. Crear el directorio del proyecto <code class="language-plaintext highlighter-rouge">mkdir my_wordpress</code>:</h2>
+
+<p><img src="/assets/img/mkdir_wordpress.png" alt="mkdir_wordpress" /></p>
+
+<p><br /></p>
+
+<h2 id="2-crear-el-archivo-docker-composeyml-en-el-directorio-del-proyecto">2. Crear el archivo <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> en el directorio del proyecto:</h2>
+
+<p><img src="/assets/img/docker_compose-yml.png" alt="docker_compose-yml" /></p>
+
+<p><br /></p>
+
+<h2 id="3-construir-el-proyecto-con-sudo-docker-compose-up--d">3. Construir el proyecto con <code class="language-plaintext highlighter-rouge">sudo docker-compose up -d</code>:</h2>
+
+<p><img src="/assets/img/Construir_el_Proyecto.png" alt="Construir_el_Proyecto" /></p>
+
+<p><br /></p>
+
+<h2 id="4-comporbar-el-funcionamiento-localhost8000">4. Comporbar el funcionamiento <code class="language-plaintext highlighter-rouge">localhost:8000</code>:</h2>
+
+<p><img src="/assets/img/loaclhost-8080.png" alt="loaclhost-8080" /></p>
+:ET
