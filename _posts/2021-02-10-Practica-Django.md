@@ -47,7 +47,7 @@ categories: jekyll update
 
 
 
-![Chown](/assets/img/Chown-1612978149359.png)
+![Chown_bien](/assets/img/Chown_bien.png)
 
 <br>
 
