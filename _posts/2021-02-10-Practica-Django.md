@@ -45,9 +45,9 @@ categories: jekyll update
 
 ## 6. Cambiar el propietario root al usuario deseado `sudo chown -R $USER:$USER .`:
 
-![Chown](/assets/img/Chown.png)
 
 
+![Chown](/assets/img/Chown-1612978149359.png)
 
 <br>
 
