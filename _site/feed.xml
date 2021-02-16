@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-10T18:25:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Práctica Django</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html" rel="alternate" type="text/html" title="Práctica Django" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Django</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-django&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir django&lt;/code&gt;:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-16T18:54:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Práctica Django</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html" rel="alternate" type="text/html" title="Práctica Django" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Django</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-django&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir django&lt;/code&gt;:&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/mkdir_django-1612977875806.png&quot; alt=&quot;mkdir_django&quot; /&gt;&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 
 &lt;h2 id=&quot;6-cambiar-el-propietario-root-al-usuario-deseado-sudo-chown--r-useruser-&quot;&gt;6. Cambiar el propietario root al usuario deseado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo chown -R $USER:$USER .&lt;/code&gt;:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/Chown.png&quot; alt=&quot;Chown&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/Chown_bien.png&quot; alt=&quot;Chown_bien&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -46,7 +46,81 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/Django_localhost.png&quot; alt=&quot;Django_localhost&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir django:</summary></entry><entry><title type="html">Práctica Wordpress</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html" rel="alternate" type="text/html" title="Práctica Wordpress" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html">&lt;h2 id=&quot;práctica-wordpress&quot;&gt;Práctica Wordpress&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/Django_localhost.png&quot; alt=&quot;Django_localhost&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir django:</summary></entry><entry><title type="html">Práctica Rails</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails.html" rel="alternate" type="text/html" title="Práctica Rails" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-rails&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir rails&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Mkdir_Rails.png&quot; alt=&quot;Mkdir_Rails&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-crear-el-fichero-dockerfile-vi-dockerfile&quot;&gt;2. Crear el fichero Dockerfile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Dockerfile&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Dockerfile_bien.png&quot; alt=&quot;Dockerfile_bien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-crear-el-fichero-gemfile-vi-gemfile&quot;&gt;3. Crear el fichero Gemfile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Gemfile&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Gemfile.png&quot; alt=&quot;Gemfile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-crear-el-fichero-gemfilelock-touch-gemfilelock&quot;&gt;4. Crear el fichero Gemfile.lock &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch Gemfile.lock&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Gemfile-lock.png&quot; alt=&quot;Gemfile-lock&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-crear-el-archivo-entrypoint-vi-entrypoint&quot;&gt;5. Crear el archivo Entrypoint &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Entrypoint&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Entrypoint.png&quot; alt=&quot;Entrypoint&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-crear-el-archivo-docker-composeyml-vi-docker-composeyml&quot;&gt;6. Crear el archivo docker-compose.yml &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi docker-compose.yml&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_compose-yml_bien.png&quot; alt=&quot;Docker_compose-yml_bien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-generar-el-esqueleto-de-rails-docker-compose-run---no-deps-web-rails-new----force---databasepostgresql&quot;&gt;7. Generar el esqueleto de Rails &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose run --no-deps web rails new . --force --database=postgresql&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_compose_run-1613498075658.png&quot; alt=&quot;Docker_compose_run&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-cambiar-el-propietario-sudo-chown--r-useruser-&quot;&gt;8. Cambiar el propietario &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo chown -R $USER:$USER .&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Chown-1613497542119.png&quot; alt=&quot;Chown&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9-contruir-la-imagen-sudo-docker-compose-build&quot;&gt;9. Contruir la imagen &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose build&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Build.png&quot; alt=&quot;Build&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;10--reemplazar-el-contenido-de-configdatabaseyml&quot;&gt;10.  Reemplazar el contenido de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/database.yml&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/databaseconfig_bien.png&quot; alt=&quot;databaseconfig_bien&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;11--iniciamos-la-app-docker-compose-up&quot;&gt;11.  Iniciamos la app &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/up-1613497877519.png&quot; alt=&quot;up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;12-crear-un-base-de-datos-docker-compose-run-web-rake-dbcreate&quot;&gt;12. Crear un base de datos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose run web rake db:create&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/database_run.png&quot; alt=&quot;database_run&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;13-comprobación-localhost3000&quot;&gt;13. Comprobación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt;:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/localhost-3000-1613498040818.png&quot; alt=&quot;localhost-3000&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir rails:</summary></entry><entry><title type="html">Práctica Wordpress</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html" rel="alternate" type="text/html" title="Práctica Wordpress" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html">&lt;h2 id=&quot;práctica-wordpress&quot;&gt;Práctica Wordpress&lt;/h2&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
