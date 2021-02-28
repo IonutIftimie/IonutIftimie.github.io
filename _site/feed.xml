@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-16T18:54:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Práctica Django</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html" rel="alternate" type="text/html" title="Práctica Django" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Django</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-django&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir django&lt;/code&gt;:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-28T13:22:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Practica Google Cloud</title><link href="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html" rel="alternate" type="text/html" title="Practica Google Cloud" /><published>2021-02-28T00:00:00+01:00</published><updated>2021-02-28T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html">&lt;h2 id=&quot;1-cear-proyecto-de-google-colud&quot;&gt;1 Cear proyecto de Google Colud:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/4-rec.png&quot; alt=&quot;4-rec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2--habilitar-app-engine&quot;&gt;2.  Habilitar App Engine&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/6-rec.png&quot; alt=&quot;6-rec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3--instalar-nodejs&quot;&gt;3.  Instalar Node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/nodeinstall.png&quot; alt=&quot;nodeinstall&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-crear-carpeta-para-el-proyecto&quot;&gt;4. Crear carpeta para el proyecto&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/carpetanodejs.png&quot; alt=&quot;carpetanodejs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-instalar-npm&quot;&gt;5. Instalar npm&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/npm.png&quot; alt=&quot;npm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-ejecutar-npm-npm-init&quot;&gt;6. Ejecutar npm &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm init&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/16-rec.png&quot; alt=&quot;16-rec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-instalar-express-npm-install-express&quot;&gt;7. Instalar express &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install express&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/18-rec-1614513315678.png&quot; alt=&quot;18-rec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-añadir-a-packagejson-las-siguientes-lineas&quot;&gt;8. Añadir a package.json las siguientes lineas:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/19.png&quot; alt=&quot;19&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9-añadir-a-serverjson-las-siguientes-lineas&quot;&gt;9. Añadir a server.json las siguientes lineas:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/21.png&quot; alt=&quot;21&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;10-comprobar-funcionamiento&quot;&gt;10. Comprobar funcionamiento&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/22.png&quot; alt=&quot;22&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/23.png&quot; alt=&quot;23&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;11-crear-formulario-formhtml&quot;&gt;11. Crear formulario form.html&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/32.png&quot; alt=&quot;32&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;12-modificar-el-archivo-serverjs&quot;&gt;12. Modificar el archivo server.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/35.png&quot; alt=&quot;35&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;13-comprobar-formulario&quot;&gt;13. Comprobar formulario&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/22-rec.png&quot; alt=&quot;22-rec&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/36.png&quot; alt=&quot;36&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;14-subir-los-archivos-a-google-cloud-google-cloud-deploy&quot;&gt;14. Subir los archivos a Google Cloud &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google cloud deploy&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/28-rec.png&quot; alt=&quot;28-rec&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1 Cear proyecto de Google Colud:</summary></entry><entry><title type="html">Práctica Django</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html" rel="alternate" type="text/html" title="Práctica Django" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Django</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Django.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-django&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir django&lt;/code&gt;:&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/mkdir_django-1612977875806.png&quot; alt=&quot;mkdir_django&quot; /&gt;&lt;/p&gt;
 

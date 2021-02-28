@@ -1,4 +1,4 @@
-I"b	<h2 id="1-crear-el-directorio-del-proyecto-mkdir-django">1. Crear el directorio del proyecto <code class="language-plaintext highlighter-rouge">mkdir django</code>:</h2>
+I"l	<h2 id="1-crear-el-directorio-del-proyecto-mkdir-django">1. Crear el directorio del proyecto <code class="language-plaintext highlighter-rouge">mkdir django</code>:</h2>
 
 <p><img src="/assets/img/mkdir_django-1612977875806.png" alt="mkdir_django" /></p>
 
@@ -30,7 +30,7 @@
 
 <h2 id="6-cambiar-el-propietario-root-al-usuario-deseado-sudo-chown--r-useruser-">6. Cambiar el propietario root al usuario deseado <code class="language-plaintext highlighter-rouge">sudo chown -R $USER:$USER .</code>:</h2>
 
-<p><img src="/assets/img/Chown.png" alt="Chown" /></p>
+<p><img src="/assets/img/Chown_bien.png" alt="Chown_bien" /></p>
 
 <p><br /></p>
 

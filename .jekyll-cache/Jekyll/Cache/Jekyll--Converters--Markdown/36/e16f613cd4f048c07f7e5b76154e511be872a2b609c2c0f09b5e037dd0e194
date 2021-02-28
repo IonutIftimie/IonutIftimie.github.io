@@ -1,0 +1,76 @@
+I"~<h2 id="1-crear-el-directorio-del-proyecto-mkdir-rails">1. Crear el directorio del proyecto <code class="language-plaintext highlighter-rouge">mkdir rails</code>:</h2>
+
+<p><img src="/assets/img/Mkdir_Rails.png" alt="Mkdir_Rails" /></p>
+
+<p><br /></p>
+
+<h2 id="2-crear-el-fichero-dockerfile-vi-dockerfile">2. Crear el fichero Dockerfile <code class="language-plaintext highlighter-rouge">vi Dockerfile</code>:</h2>
+
+<p><img src="/assets/img/Dockerfile_bien.png" alt="Dockerfile_bien" /></p>
+
+<p><br /></p>
+
+<h2 id="3-crear-el-fichero-gemfile-vi-gemfile">3. Crear el fichero Gemfile <code class="language-plaintext highlighter-rouge">vi Gemfile</code>:</h2>
+
+<p><img src="/assets/img/Gemfile.png" alt="Gemfile" /></p>
+
+<p><br /></p>
+
+<h2 id="4-crear-el-fichero-gemfilelock-touch-gemfilelock">4. Crear el fichero Gemfile.lock <code class="language-plaintext highlighter-rouge">touch Gemfile.lock</code>:</h2>
+
+<p><img src="/assets/img/Gemfile-lock.png" alt="Gemfile-lock" /></p>
+
+<p><br /></p>
+
+<h2 id="5-crear-el-archivo-entrypoint-vi-entrypoint">5. Crear el archivo Entrypoint <code class="language-plaintext highlighter-rouge">vi Entrypoint</code>:</h2>
+
+<p><img src="/assets/img/Entrypoint.png" alt="Entrypoint" /></p>
+
+<p><br /></p>
+
+<h2 id="6-crear-el-archivo-docker-composeyml-vi-docker-composeyml">6. Crear el archivo docker-compose.yml <code class="language-plaintext highlighter-rouge">vi docker-compose.yml</code>:</h2>
+
+<p><img src="/assets/img/Docker_compose-yml_bien.png" alt="Docker_compose-yml_bien" /></p>
+
+<p><br /></p>
+
+<h2 id="7-generar-el-esqueleto-de-rails-docker-compose-run---no-deps-web-rails-new----force---databasepostgresql">7. Generar el esqueleto de Rails <code class="language-plaintext highlighter-rouge">docker-compose run --no-deps web rails new . --force --database=postgresql</code>:</h2>
+
+<p><img src="/assets/img/Docker_compose_run-1613498075658.png" alt="Docker_compose_run" /></p>
+
+<p><br /></p>
+
+<h2 id="8-cambiar-el-propietario-sudo-chown--r-useruser-">8. Cambiar el propietario <code class="language-plaintext highlighter-rouge">sudo chown -R $USER:$USER .</code>:</h2>
+
+<p><img src="/assets/img/Chown-1613497542119.png" alt="Chown" /></p>
+
+<p><br /></p>
+
+<h2 id="9-contruir-la-imagen-sudo-docker-compose-build">9. Contruir la imagen <code class="language-plaintext highlighter-rouge">sudo docker-compose build</code>:</h2>
+
+<p><img src="/assets/img/Build.png" alt="Build" /></p>
+
+<p><br /></p>
+
+<h2 id="10--reemplazar-el-contenido-de-configdatabaseyml">10.  Reemplazar el contenido de <code class="language-plaintext highlighter-rouge">config/database.yml</code>:</h2>
+
+<p><img src="/assets/img/databaseconfig_bien.png" alt="databaseconfig_bien" /></p>
+
+<p><br /></p>
+
+<h2 id="11--iniciamos-la-app-docker-compose-up">11.  Iniciamos la app <code class="language-plaintext highlighter-rouge">docker-compose up</code>:</h2>
+
+<p><img src="/assets/img/up-1613497877519.png" alt="up" /></p>
+
+<p><br /></p>
+
+<h2 id="12-crear-un-base-de-datos-docker-compose-run-web-rake-dbcreate">12. Crear un base de datos <code class="language-plaintext highlighter-rouge">docker-compose run web rake db:create</code>:</h2>
+
+<p><img src="/assets/img/database_run.png" alt="database_run" /></p>
+
+<p><br /></p>
+
+<h2 id="13-comprobación-localhost3000">13. Comprobación <code class="language-plaintext highlighter-rouge">localhost:3000</code>:</h2>
+
+<p><img src="/assets/img/localhost-3000-1613498040818.png" alt="localhost-3000" /></p>
+:ET
