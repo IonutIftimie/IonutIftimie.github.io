@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-28T13:22:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Practica Google Cloud</title><link href="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html" rel="alternate" type="text/html" title="Practica Google Cloud" /><published>2021-02-28T00:00:00+01:00</published><updated>2021-02-28T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html">&lt;h2 id=&quot;1-cear-proyecto-de-google-colud&quot;&gt;1 Cear proyecto de Google Colud:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-27T19:18:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Validación de entradas</title><link href="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html" rel="alternate" type="text/html" title="Validación de entradas" /><published>2021-03-21T00:00:00+01:00</published><updated>2021-03-21T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html">&lt;h2 id=&quot;1-mitigar-xss&quot;&gt;1. Mitigar XSS&lt;/h2&gt;
+
+&lt;p&gt;Para evitar esto utilizamos specialchar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/peps-post-mejorado.png&quot; alt=&quot;peps-post-mejorado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-autenticación-con-sesiones&quot;&gt;2. Autenticación con sesiones&lt;/h2&gt;
+
+&lt;p&gt;Para acceder mediante usuario/contraseña crearemos el siguiente fichero.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/peps-post-mejorado-1616346722351.png&quot; alt=&quot;peps-post-mejorado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-robo-de-sesion&quot;&gt;3. Robo de sesion&lt;/h2&gt;
+
+&lt;p&gt;Para relizar esto primero necesitarmeos crear los archivos php y que la victima los visite despues de “logearse”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/peps-robo-de-sesion.png&quot; alt=&quot;peps-robo-de-sesion&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/peps-post-hackeada.png&quot; alt=&quot;peps-post-hackeada&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora lo comprobamos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/session-robada.png&quot; alt=&quot;session-robada&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/mario.png&quot; alt=&quot;mario&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-evitar-robo-de-sesión&quot;&gt;4. Evitar robo de sesión&lt;/h2&gt;
+
+&lt;p&gt;Para evitar esto añadiremos esta linea fichero de sesion &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ini_set( 'session.cookie_httponly', 1 );&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/login-mejorado.png&quot; alt=&quot;login-mejorado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-control-de-acceso&quot;&gt;5. Control de acceso&lt;/h2&gt;
+
+&lt;p&gt;Para implementar un control de acceso se tendria modificar el archivo de login de sesion y crar tres ficheros mas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/login2.png&quot; alt=&quot;login2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/perfil.png&quot; alt=&quot;perfil&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/admin.png&quot; alt=&quot;admin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/no-autorizado.png&quot; alt=&quot;no-autorizado&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-csrf-corss-site-request-frogery&quot;&gt;6. CSRF (Corss Site Request Frogery)&lt;/h2&gt;
+
+&lt;p&gt;Para realizar un este tipo de XSS, se necesita crear los siguientes archivos:&lt;/p&gt;
+
+&lt;p&gt;por parte de “evil”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hackada-crsf.png&quot; alt=&quot;hackada-crsf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;y la victima&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/transfer.png&quot; alt=&quot;transfer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;danto como resultado&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hackeada-csrf.png&quot; alt=&quot;hackeada-csrf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-redirigir-a-otra-web&quot;&gt;7. Redirigir a otra web&lt;/h2&gt;
+
+&lt;p&gt;se necistara crear el siguiente archivo en el host “evil”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/redireect.png&quot; alt=&quot;redireect&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hackeada-redirect.png&quot; alt=&quot;hackeada-redirect&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Mitigar XSS</summary></entry><entry><title type="html">Practica Google Cloud</title><link href="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html" rel="alternate" type="text/html" title="Practica Google Cloud" /><published>2021-02-28T00:00:00+01:00</published><updated>2021-02-28T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/28/Google-Cloud.html">&lt;h2 id=&quot;1-cear-proyecto-de-google-colud&quot;&gt;1 Cear proyecto de Google Colud:&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/4-rec.png&quot; alt=&quot;4-rec&quot; /&gt;&lt;/p&gt;
 
@@ -457,24 +551,4 @@ COPY ./site-content/index.html /usr/share/nginx/html/index.html
   &lt;li&gt;Error 404 personalizado:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/404 (copia 1).png&quot; alt=&quot;404 (copia 1)&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Tarea 1</summary></entry><entry><title type="html">Práctica Docker</title><link href="http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker.html" rel="alternate" type="text/html" title="Práctica Docker" /><published>2020-01-27T00:00:00+01:00</published><updated>2020-01-27T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/27/Practica-Docker.html">&lt;h2 id=&quot;comprobar-la-instalación-de-docker-docker-ps&quot;&gt;Comprobar la instalación de Docker &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker ps&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/comprobar.png&quot; alt=&quot;comprobar&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;construir-contenedor-con-buildsh&quot;&gt;Construir contenedor con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.sh&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/build.png&quot; alt=&quot;build&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;iniciar-el-contenedor-debugsh&quot;&gt;Iniciar el contenedor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;debug.sh&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/debug1.png&quot; alt=&quot;debug1&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Acceder a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8086/public_html/&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/debug.png&quot; alt=&quot;debug&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;comprobar-contenedores-iniciados&quot;&gt;Comprobar contenedores iniciados:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/comprobar_final.png&quot; alt=&quot;comprobar_final&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Comprobar la instalación de Docker docker ps:</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/404 (copia 1).png&quot; alt=&quot;404 (copia 1)&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Tarea 1</summary></entry></feed>

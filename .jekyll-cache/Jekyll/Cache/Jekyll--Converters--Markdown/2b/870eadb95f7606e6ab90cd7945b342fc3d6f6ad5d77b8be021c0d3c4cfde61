@@ -1,0 +1,97 @@
+I"+
+<h2 id="1-mitigar-xss">1. Mitigar XSS</h2>
+
+<p>Para evitar esto utilizamos specialchar.</p>
+
+<p><img src="/assets/img/peps-post-mejorado.png" alt="peps-post-mejorado" /></p>
+
+<p><br /></p>
+
+<h2 id="2-autenticación-con-sesiones">2. Autenticación con sesiones</h2>
+
+<p>Para acceder mediante usuario/contraseña crearemos el siguiente fichero.</p>
+
+<p><img src="/assets/img/peps-post-mejorado-1616346722351.png" alt="peps-post-mejorado" /></p>
+
+<p><br /></p>
+
+<h2 id="3-robo-de-sesion">3. Robo de sesion</h2>
+
+<p>Para relizar esto primero necesitarmeos crear los archivos php y que la victima los visite despues de “logearse”.</p>
+
+<p><img src="/assets/img/peps-robo-de-sesion.png" alt="peps-robo-de-sesion" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/peps-post-hackeada.png" alt="peps-post-hackeada" /></p>
+
+<p><br /></p>
+
+<p>Ahora lo comprobamos.</p>
+
+<p><img src="/assets/img/session-robada.png" alt="session-robada" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/mario.png" alt="mario" /></p>
+
+<p><br /></p>
+
+<h2 id="4-evitar-robo-de-sesión">4. Evitar robo de sesión</h2>
+
+<p>Para evitar esto añadiremos esta linea fichero de sesion <code class="language-plaintext highlighter-rouge">ini_set( 'session.cookie_httponly', 1 );</code></p>
+
+<p><img src="/assets/img/login-mejorado.png" alt="login-mejorado" /></p>
+
+<p><br /></p>
+
+<h2 id="5-control-de-acceso">5. Control de acceso</h2>
+
+<p>Para implementar un control de acceso se tendria modificar el archivo de login de sesion y crar tres ficheros mas.</p>
+
+<p><img src="/assets/img/login2.png" alt="login2" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/perfil.png" alt="perfil" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/admin.png" alt="admin" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/no-autorizado.png" alt="no-autorizado" /></p>
+
+<p><br /></p>
+
+<h2 id="6-csrf-corss-site-request-frogery">6. CSRF (Corss Site Request Frogery)</h2>
+
+<p>Para realizar un este tipo de XSS, se necesita crear los siguientes archivos:</p>
+
+<p>por parte de “evil”</p>
+
+<p><img src="/assets/img/hackada-crsf.png" alt="hackada-crsf" /></p>
+
+<p><br /></p>
+
+<p>y la victima</p>
+
+<p><img src="/assets/img/transfer.png" alt="transfer" /></p>
+
+<p><br /></p>
+
+<p>danto como resultado</p>
+
+<p><img src="/assets/img/hackeada-csrf.png" alt="hackeada-csrf" /></p>
+
+<p><br /></p>
+
+<h2 id="7-redirigir-a-otra-web">7. Redirigir a otra web</h2>
+
+<p>se necistara crear el siguiente archivo en el host “evil”.</p>
+
+<p><img src="/assets/img/redireect.png" alt="redireect" /></p>
+
+<p><img src="/assets/img/hackeada-redirect.png" alt="hackeada-redirect" /></p>
+:ET
