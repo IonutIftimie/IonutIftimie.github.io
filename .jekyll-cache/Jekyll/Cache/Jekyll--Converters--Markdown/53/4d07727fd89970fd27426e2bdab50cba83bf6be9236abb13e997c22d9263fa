@@ -1,0 +1,71 @@
+I"4<h2 id="p1-deshabilitar-autoindex">P1. Deshabilitar autoindex</h2>
+
+<p>Con <code class="language-plaintext highlighter-rouge">a2dismod --force autoindex</code> se puede deshabilitar el autoindexado:</p>
+
+<p><img src="/assets/img/autoindex.png" alt="autoindex" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/autoindexoff2.png" alt="autoindexoff2" /></p>
+
+<p>Y para deshabilitar la versión de apache se soluciona con los modulos <code class="language-plaintext highlighter-rouge">ServerTokens Prod</code> y <code class="language-plaintext highlighter-rouge">ServerSignature Off</code>.</p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/server-signature.png" alt="server-signature" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/curl2.png" alt="curl2" /></p>
+
+<p><br /></p>
+
+<h2 id="p1-hsts">P1. HSTS</h2>
+
+<p>Para solo permitir solo tráfico ssl(https) se añadiria el siguiente modulo.</p>
+
+<p><img src="/assets/img/header-ssl.png" alt="header-ssl" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/ssl.png" alt="ssl" /></p>
+
+<h2 id="p1-csp">P1. CSP</h2>
+
+<p>Para aplicar esta capa de seguridad simplemente se añadira el siguiente modulo.</p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/header-set.png" alt="header-set" /></p>
+
+<p><br /></p>
+
+<h2 id="p2-waf">P2. WAF</h2>
+
+<p>Se descarga e instala modsecurity y se crea(renombra) el fichero de cofiguración.</p>
+
+<p><img src="/assets/img/waf2.png" alt="waf2" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/waf.png" alt="waf" /></p>
+
+<p><br /></p>
+
+<h2 id="p3-owasp">P3. OWASP</h2>
+
+<p>Clonamos el repositorio de owasp y añadimos los ficheros de configuración y reglas</p>
+
+<p><img src="/assets/img/owasp-dockerfile.png" alt="owasp-dockerfile" /></p>
+
+<p><br /></p>
+
+<p>Y por ultimo comprobamos</p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/curl(owasp).png" alt="curl(owasp)" /></p>
+
+<p><br /></p>
+
+:ET

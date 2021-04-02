@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-27T19:18:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Validación de entradas</title><link href="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html" rel="alternate" type="text/html" title="Validación de entradas" /><published>2021-03-21T00:00:00+01:00</published><updated>2021-03-21T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html">&lt;h2 id=&quot;1-mitigar-xss&quot;&gt;1. Mitigar XSS&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-02T22:11:52+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Hardening del servidor</title><link href="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html" rel="alternate" type="text/html" title="Hardening del servidor" /><published>2021-04-02T00:00:00+02:00</published><updated>2021-04-02T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html">&lt;h2 id=&quot;p1-deshabilitar-autoindex&quot;&gt;P1. Deshabilitar autoindex&lt;/h2&gt;
+
+&lt;p&gt;Con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a2dismod --force autoindex&lt;/code&gt; se puede deshabilitar el autoindexado:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/autoindex.png&quot; alt=&quot;autoindex&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/autoindexoff2.png&quot; alt=&quot;autoindexoff2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y para deshabilitar la versión de apache se soluciona con los modulos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ServerTokens Prod&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ServerSignature Off&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/server-signature.png&quot; alt=&quot;server-signature&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/curl2.png&quot; alt=&quot;curl2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;p1-hsts&quot;&gt;P1. HSTS&lt;/h2&gt;
+
+&lt;p&gt;Para solo permitir solo tráfico ssl(https) se añadiria el siguiente modulo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/header-ssl.png&quot; alt=&quot;header-ssl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ssl.png&quot; alt=&quot;ssl&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;p1-csp&quot;&gt;P1. CSP&lt;/h2&gt;
+
+&lt;p&gt;Para aplicar esta capa de seguridad simplemente se añadira el siguiente modulo.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/header-set.png&quot; alt=&quot;header-set&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;p2-waf&quot;&gt;P2. WAF&lt;/h2&gt;
+
+&lt;p&gt;Se descarga e instala modsecurity y se crea(renombra) el fichero de cofiguración.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/waf2.png&quot; alt=&quot;waf2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/waf.png&quot; alt=&quot;waf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;p3-owasp&quot;&gt;P3. OWASP&lt;/h2&gt;
+
+&lt;p&gt;Clonamos el repositorio de owasp y añadimos los ficheros de configuración y reglas&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/owasp-dockerfile.png&quot; alt=&quot;owasp-dockerfile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y por ultimo comprobamos&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/curl(owasp).png&quot; alt=&quot;curl(owasp)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">P1. Deshabilitar autoindex</summary></entry><entry><title type="html">Validación de entradas</title><link href="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html" rel="alternate" type="text/html" title="Validación de entradas" /><published>2021-03-21T00:00:00+01:00</published><updated>2021-03-21T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/03/21/Valildacion-de-entradas.html">&lt;h2 id=&quot;1-mitigar-xss&quot;&gt;1. Mitigar XSS&lt;/h2&gt;
 
 &lt;p&gt;Para evitar esto utilizamos specialchar.&lt;/p&gt;
 
@@ -479,76 +547,4 @@ COPY ./site-content/index.html /usr/share/nginx/html/index.html
 &lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker9-1612362094157.png&quot; alt=&quot;NgxDocker9&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --rm -d -p 8080:80 --name web webserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Nginx con Docker</summary></entry><entry><title type="html">Configuración Básica de Apache</title><link href="http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache.html" rel="alternate" type="text/html" title="Configuración Básica de Apache" /><published>2020-01-27T00:00:00+01:00</published><updated>2020-01-27T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/27/Configuracion_Basica_Apache.html">&lt;h2 id=&quot;tarea-1&quot;&gt;Tarea 1&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sites-available&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/sites-avali.png&quot; alt=&quot;sites-avali&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Directorio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sites-enablede&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/sites-enab.png&quot; alt=&quot;sites-enab&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Directorios creados para &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DocumentRoot&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Documentroot.png&quot; alt=&quot;Documentroot&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Archivo de configuración de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/hosts&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/hosts.png&quot; alt=&quot;hosts&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sitios motrados en un navegador web:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/website1.png&quot; alt=&quot;website1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/website2.png&quot; alt=&quot;Tarea 1&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tarea-2&quot;&gt;Tarea 2&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Archivo de configuración de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;website1.conf&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/alias1.png&quot; alt=&quot;alias1&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Comprobación del  &lt;em&gt;alias&lt;/em&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/alias2.png&quot; alt=&quot;alias2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/alias3.png&quot; alt=&quot;alias3&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tarea-3&quot;&gt;Tarea 3&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Archivo de configuración de  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apache2.conf&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Redirect2.png&quot; alt=&quot;Redirect2&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Comprobación:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Redirect.png&quot; alt=&quot;Redirect&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tarea-4&quot;&gt;Tarea 4&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Error 404 personalizado:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/404 (copia 1).png&quot; alt=&quot;404 (copia 1)&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Tarea 1</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Nginx con Docker</summary></entry></feed>
