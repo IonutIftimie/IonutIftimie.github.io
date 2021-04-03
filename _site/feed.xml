@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T16:55:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Seguridad en Docker</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html" rel="alternate" type="text/html" title="Seguridad en Docker" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html">&lt;h2 id=&quot;1-seguridad-en-host&quot;&gt;1. Seguridad en Host&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T18:44:37+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Autenticacion HTTP</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html" rel="alternate" type="text/html" title="Autenticacion HTTP" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html">&lt;p&gt;Para implementar una autenticación basicca se creara un fichero con el siguiente contenido:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/autenticacion-3.png&quot; alt=&quot;autenticacion-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lanzamos el servicio PHP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/php.png&quot; alt=&quot;php&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y comprobamos que nos pide credenciales.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/autenticacion-1.png&quot; alt=&quot;autenticacion-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/autenticacion-2-1617463272583.png&quot; alt=&quot;autenticacion-2&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Para implementar una autenticación basicca se creara un fichero con el siguiente contenido:</summary></entry><entry><title type="html">Oauth</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Oauth.html" rel="alternate" type="text/html" title="Oauth" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Oauth</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Oauth.html">&lt;h2 id=&quot;crear-y-ejecutar-aplicación&quot;&gt;Crear y ejecutar aplicación&lt;/h2&gt;
+
+&lt;p&gt;Creamos credenciales de Google APIs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/oauth-1.png&quot; alt=&quot;oauth-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Configuramos la pantalla de consentimiento.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/oauth-2.png&quot; alt=&quot;oauth-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Crear el ID del cliente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/oauth.png&quot; alt=&quot;oauth&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Despues de instalar Docker-compose instalamos el repositorio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/composer.png&quot; alt=&quot;composer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Despues de ejecutar el repositorio y aceptar los permisos aparecera el contenido de dirve.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/drive.png&quot; alt=&quot;drive&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Crear y ejecutar aplicación</summary></entry><entry><title type="html">Proteger directorio</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Proteger-directorio.html" rel="alternate" type="text/html" title="Proteger directorio" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Proteger-directorio</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Proteger-directorio.html">&lt;h2 id=&quot;1-crear-directorio&quot;&gt;1. Crear directorio&lt;/h2&gt;
+
+&lt;p&gt;Crear un directorio con el nombre de  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/protegido&lt;/code&gt; y un indice.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/indice.png&quot; alt=&quot;indice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-crear-fichero-de-configuración&quot;&gt;2. Crear fichero de configuración&lt;/h2&gt;
+
+&lt;p&gt;Creamos un fichero de configuración y lo activamos con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo a2enmod protegido.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/protegido-conf.png&quot; alt=&quot;protegido-conf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-crear-usuario&quot;&gt;3. Crear usuario&lt;/h2&gt;
+
+&lt;p&gt;Usando htpasswd añadimos usuarios y su contraseña&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/usuarios.png&quot; alt=&quot;usuarios&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-comprobacion&quot;&gt;4. Comprobacion&lt;/h2&gt;
+
+&lt;p&gt;Accedemos al sitio protegido e ingresamos las credenciales&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/proteg.png&quot; alt=&quot;proteg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pagina-1.png&quot; alt=&quot;pagina-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pero si no añadimos credenciales nos deniega el accesso.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/AUTORIZADO.png&quot; alt=&quot;AUTORIZADO&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear directorio</summary></entry><entry><title type="html">Seguridad en Docker</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html" rel="alternate" type="text/html" title="Seguridad en Docker" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html">&lt;h2 id=&quot;1-seguridad-en-host&quot;&gt;1. Seguridad en Host&lt;/h2&gt;
 
 &lt;p&gt;Para la seguridad en host se deben añadir los usuario que deban tener permiso para lanzar contenedores al grupo docker.&lt;/p&gt;
 
@@ -440,85 +512,4 @@
 
 &lt;h2 id=&quot;4-comporbar-el-funcionamiento-localhost8000&quot;&gt;4. Comporbar el funcionamiento &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8000&lt;/code&gt;:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/loaclhost-8080.png&quot; alt=&quot;loaclhost-8080&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Práctica Wordpress</summary></entry><entry><title type="html">Reflexión</title><link href="http://localhost:4000/jekyll/update/2020/12/04/Reflexion.html" rel="alternate" type="text/html" title="Reflexión" /><published>2020-12-04T22:15:47+01:00</published><updated>2020-12-04T22:15:47+01:00</updated><id>http://localhost:4000/jekyll/update/2020/12/04/Reflexion</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/04/Reflexion.html">&lt;h1&gt;Seguridad Informatica&lt;/h1&gt;
-
-&lt;p&gt;Tras la cuarta revolución industrial, esta se encuentra más en auge que nunca, cada vez el mundo está más globalizado y “conectado”, desde empresas que quieren expandirse por al rededor del mundo o como la automatización e interconectividad de dispositivos cotidianos (IoT).&lt;/p&gt;
-
-&lt;p&gt;Esto significa que cada vez más se transmite y se hace uso de los datos/información, desde datos irrelevantes como críticos, estos requieren una serie de normativas y regulaciones para que no se hagan un mal uso de ellos y por lo tanto unas medidas de seguridad para que solo se accesible para las personas autorizadas (Confidencialidad), no sea modificada por terceros o dañada (Integridad) y que se pueda tener acceso siempre que se desee (Disponibilidad).&lt;/p&gt;
-
-&lt;p&gt;A pesar de este gran incremento del tráfico de información y digitalización, mucha gente (ya sean empresario o gente común) no le está dando la importancia que se merece la seguridad informática o no quieren (costes). Si no se toman medidas de seguridad pueden perjudicar gravemente (económicamente, judicialmente o social), estas medidas de seguridad pueden ser desde simples como concienciar sobre el uso de dispositivos o como administrar y crear una contraseña de forma eficaz (la mayoría de las brechas de seguridad se debe a causa del ser humano.) hasta medidas más técnicas y caras como tener copias de seguridad semanal/mensualmente o hacer análisis contante del tráfico de red local.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Seguridad Informatica</summary></entry><entry><title type="html">Post de prueba</title><link href="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html" rel="alternate" type="text/html" title="Post de prueba" /><published>2020-12-04T22:15:47+01:00</published><updated>2020-12-04T22:15:47+01:00</updated><id>http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/04/Post_de_Prueba.html">&lt;p&gt;Primer post (prueba)&lt;/p&gt;
-
-&lt;p&gt;Imagen de prueba:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/image-20201216163752925.png&quot; alt=&quot;image-20201216163752925&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Primer post (prueba)</summary></entry><entry><title type="html">P1 Apache</title><link href="http://localhost:4000/jekyll/update/2020/02/03/P1-Apache.html" rel="alternate" type="text/html" title="P1 Apache" /><published>2020-02-03T00:00:00+01:00</published><updated>2020-02-03T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/02/03/P1-Apache</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/02/03/P1-Apache.html">&lt;h2 id=&quot;instalación-de-un-certificado-digital-apache&quot;&gt;Instalación de un certificado digital Apache&lt;/h2&gt;
-
-&lt;h2 id=&quot;1-activar-el-módulo-ssl&quot;&gt;1. Activar el módulo SSL:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/activar-1612357191242.png&quot; alt=&quot;activar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;​					&lt;strong&gt;&lt;em&gt;Lugo se reincia el servidor: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart apache2&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-generar-el-certificado-ssl-auto-firmado&quot;&gt;2. Generar el certificado SSL Auto-firmado:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/generar.png&quot; alt=&quot;generar&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo openssl req -x509 -nodes -days 365 \ -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-configurar-el-fichero-default-sslconfde-configuración-de-apache-para-que-use-ssl&quot;&gt;3. Configurar el fichero (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-ssl.conf&lt;/code&gt;)de configuración de Apache para que use SSL:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/ssl3.png&quot; alt=&quot;ssl3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Los parámetros modificados son:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ServerAdmin&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ServerName&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSLCertificateFile&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSLCertificateKeyFile&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-añadir-tu-propio-domminio-en-etchosts&quot;&gt;4. Añadir tu propio domminio en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/hosts&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/hosts-1612357773162.png&quot; alt=&quot;hosts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;5-activar-el-host-virtual-con-ssl&quot;&gt;5. Activar el host virtual con SSL:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/activar2.png&quot; alt=&quot;activar2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;​	&lt;strong&gt;&lt;em&gt;Lugo se reincia el servidor: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl restart apache2&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;6-comprobación&quot;&gt;6. Comprobación:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/ssl1-1612358109549.png&quot; alt=&quot;ssl1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/ssl2-1612358122400.png&quot; alt=&quot;ssl2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;7-redirigir-el-tráfico-de-nuestro-sitio-editar-el-archivo-default-sslconf&quot;&gt;7. Redirigir el tráfico de nuestro sitio (editar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-ssl.conf&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/redirect-1612358643276.png&quot; alt=&quot;redirect&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Instalación de un certificado digital Apache</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/loaclhost-8080.png&quot; alt=&quot;loaclhost-8080&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Práctica Wordpress</summary></entry></feed>
