@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-02T22:11:52+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Hardening del servidor</title><link href="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html" rel="alternate" type="text/html" title="Hardening del servidor" /><published>2021-04-02T00:00:00+02:00</published><updated>2021-04-02T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html">&lt;h2 id=&quot;p1-deshabilitar-autoindex&quot;&gt;P1. Deshabilitar autoindex&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T16:55:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Seguridad en Docker</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html" rel="alternate" type="text/html" title="Seguridad en Docker" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Seguridad-en-Docker.html">&lt;h2 id=&quot;1-seguridad-en-host&quot;&gt;1. Seguridad en Host&lt;/h2&gt;
+
+&lt;p&gt;Para la seguridad en host se deben añadir los usuario que deban tener permiso para lanzar contenedores al grupo docker.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/seguridad-host.png&quot; alt=&quot;seguridad-host&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-seguridad-en-el-demonio&quot;&gt;2. Seguridad en el demonio&lt;/h2&gt;
+
+&lt;p&gt;Para impedir que usuarios pudan modificar la configuración y que no puedan ver el socket se añade(o se crea) el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;daemon.json&lt;/code&gt; lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/daemon-json.png&quot; alt=&quot;daemon-json&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-seguridad-en-contenedores&quot;&gt;3. Seguridad en contenedores&lt;/h2&gt;
+
+&lt;p&gt;Si se quiere limitar los recursos de un contenedro se usa el parametro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--cpus&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/seguridad-en-docker-1.png&quot; alt=&quot;seguridad-en-docker-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4--privilegios&quot;&gt;4 . Privilegios&lt;/h2&gt;
+
+&lt;p&gt;Si utilizamos un usuario ( 4400) que no tiene privilegios para realizar acciones que necesite tener permisos nos aparecera un mensaje de error.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/docker-privilegios.png&quot; alt=&quot;docker-privilegios&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/docker-mount-non-privileged.png&quot; alt=&quot;docker-mount-non-privileged&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pero para poder realizar esta acciones se debera usar el parametro&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--privileged&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/docker-mount-privileged.png&quot; alt=&quot;docker-mount-privileged&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-escaneo-pasivo-de-vulneravilidades&quot;&gt;5. Escaneo pasivo de vulneravilidades&lt;/h2&gt;
+
+&lt;p&gt;Para realizar un escaneo de una imagen se utilizara &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trivy&lt;/code&gt;  y la imagen &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordpress:beta-5.7-RC1-php7.4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trivy-command.png&quot; alt=&quot;trivy-command&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/wordpress-beta-5-7-RC1-php-7-4.png&quot; alt=&quot;wordpress-beta-5-7-RC1-php-7-4&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Seguridad en Host</summary></entry><entry><title type="html">Hardening del servidor</title><link href="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html" rel="alternate" type="text/html" title="Hardening del servidor" /><published>2021-04-02T00:00:00+02:00</published><updated>2021-04-02T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/02/Hardening-del-servidor.html">&lt;h2 id=&quot;p1-deshabilitar-autoindex&quot;&gt;P1. Deshabilitar autoindex&lt;/h2&gt;
 
 &lt;p&gt;Con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a2dismod --force autoindex&lt;/code&gt; se puede deshabilitar el autoindexado:&lt;/p&gt;
 
@@ -475,76 +521,4 @@
 
 &lt;h2 id=&quot;7-redirigir-el-tráfico-de-nuestro-sitio-editar-el-archivo-default-sslconf&quot;&gt;7. Redirigir el tráfico de nuestro sitio (editar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-ssl.conf&lt;/code&gt;:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/redirect-1612358643276.png&quot; alt=&quot;redirect&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Instalación de un certificado digital Apache</summary></entry><entry><title type="html">Práctica Nginx con Docker</title><link href="http://localhost:4000/jekyll/update/2020/02/03/Pr%C3%A1ctica-Nginx-con-Docker.html" rel="alternate" type="text/html" title="Práctica Nginx con Docker" /><published>2020-02-03T00:00:00+01:00</published><updated>2020-02-03T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2020/02/03/Pr%C3%A1ctica-Nginx-con-Docker</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/02/03/Pr%C3%A1ctica-Nginx-con-Docker.html">&lt;h2 id=&quot;nginx-con-docker&quot;&gt;Nginx con Docker&lt;/h2&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1-instalar-nginx&quot;&gt;1. Instalar Nginx:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/nginx1.png&quot; alt=&quot;nginx1&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --rm -d -p 8080:80 --name web nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker2.png&quot; alt=&quot;NgxDocker2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Parar contenedor&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker3.png&quot; alt=&quot;NgxDocker3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-añadir-html-personalizado&quot;&gt;2. Añadir HTML personalizado:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker4.png&quot; alt=&quot;NgxDocker4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-crear-volumen-y-montar-directorio-local&quot;&gt;3. Crear volumen y montar directorio local:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker5.png&quot; alt=&quot;NgxDocker5&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr/share/nginx/html nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker6.png&quot; alt=&quot;NgxDocker6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-crear-una-imagen-personalizada&quot;&gt;4. Crear una imagen personalizada:&lt;/h2&gt;
-
-&lt;h2 id=&quot;crear-el-fichero-con-el-siguiente-contenido&quot;&gt;Crear el fichero con el siguiente contenido:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker7.png&quot; alt=&quot;NgxDocker7&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM nginx:latest
-COPY ./site-content/index.html /usr/share/nginx/html/index.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;construir-imagen&quot;&gt;Construir imagen:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker8.png&quot; alt=&quot;NgxDocker8&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker build -t webserver .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ejecutar-la-imagen-sin-crear-un-volumen&quot;&gt;Ejecutar la imagen (Sin crear un volumen):&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/NgxDocker9-1612362094157.png&quot; alt=&quot;NgxDocker9&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --rm -d -p 8080:80 --name web webserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Nginx con Docker</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/redirect-1612358643276.png&quot; alt=&quot;redirect&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Instalación de un certificado digital Apache</summary></entry></feed>
