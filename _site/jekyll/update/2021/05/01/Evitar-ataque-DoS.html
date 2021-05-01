@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Evitar ataque DoS | Blog de Ionut Iftimie</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Evitar ataque DoS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1. Instalar mod-evasive y sus dependencias si no se tiene instalado :" />
+<meta property="og:description" content="1. Instalar mod-evasive y sus dependencias si no se tiene instalado :" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" />
+<meta property="og:site_name" content="Blog de Ionut Iftimie" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-01T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Evitar ataque DoS" />
+<script type="application/ld+json">
+{"description":"1. Instalar mod-evasive y sus dependencias si no se tiene instalado :","@type":"BlogPosting","headline":"Evitar ataque DoS","dateModified":"2021-05-01T00:00:00+02:00","datePublished":"2021-05-01T00:00:00+02:00","url":"http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Blog de Ionut Iftimie" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Blog de Ionut Iftimie</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Evitar ataque DoS</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-05-01T00:00:00+02:00" itemprop="datePublished">May 1, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h4 id="1-instalar-mod-evasive-y-sus-dependencias-si-no-se-tiene-instalado-">1. Instalar <code class="language-plaintext highlighter-rouge">mod-evasive</code> y sus dependencias si no se tiene instalado :</h4>
+
+<p><code>sudo apt install aptitude -y</code></p>
+
+<p><code>sudo aptitude install libapache2-mod-evasive -y</code></p>
+
+<p><img src="/assets/img/Captura de pantalla_2021-05-01_20-11-06.png" alt="Captura de pantalla_2021-05-01_20-11-06" /></p>
+
+<p><br /></p>
+
+<h4 id="2-modificar-el-archivo-evasiveconf-para-que-quede-así">2. Modificar el archivo <code class="language-plaintext highlighter-rouge">evasive.conf</code> para que quede así:</h4>
+
+<p><img src="/assets/img/evasive-conf.png" alt="evasive-conf" /></p>
+
+<p><br /></p>
+
+<h4 id="3-creamos-un-directorio-para-los-logs-y-cambiamos-propietario">3. Creamos un directorio para los logs y cambiamos propietario:</h4>
+
+<p><img src="/assets/img/mkdir-chonw.png" alt="mkdir-chonw" /></p>
+
+<p><br /></p>
+
+<h4 id="4-reiniciamos-apache2">4. Reiniciamos apache2:</h4>
+
+<p><img src="/assets/img/restart.png" alt="restart" /></p>
+
+<p><br /></p>
+
+<h4 id="5-iniciamos-el-test-del-propio-mod-evasive">5. Iniciamos el test del propio <code class="language-plaintext highlighter-rouge">mod-evasive</code>:</h4>
+
+<p><code>perl /usr/share/doc/libapache2-mod-evasive/examples/test.pl</code></p>
+
+<p><img src="/assets/img/test-pl.png" alt="test-pl" /></p>
+
+<p><br /></p>
+
+<h4 id="6-intentamos-realizar-el-ataque-y-revisamos-los-logs">6. Intentamos realizar el ataque y revisamos los logs:</h4>
+
+<p><code>ab -n100 -c5 http://127.0.0.1/index.html:80</code></p>
+
+<p><img src="/assets/img/testeo.png" alt="testeo" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/error-log.png" alt="error-log" /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/img/acces-log.png" alt="acces-log" /></p>
+
+
+  </div><a class="u-url" href="/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Blog de Ionut Iftimie</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Blog de Ionut Iftimie</li><li><a class="u-email" href="mailto:aluift991@ieselccaminas.org">aluift991@ieselccaminas.org</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/IonutIftimie"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">IonutIftimie</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

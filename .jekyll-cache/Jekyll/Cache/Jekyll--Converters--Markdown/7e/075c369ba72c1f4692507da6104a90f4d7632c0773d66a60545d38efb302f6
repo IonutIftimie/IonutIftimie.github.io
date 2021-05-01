@@ -1,0 +1,51 @@
+I"@<h4 id="1-instalar-mod-evasive-y-sus-dependencias-si-no-se-tiene-instalado-">1. Instalar <code class="language-plaintext highlighter-rouge">mod-evasive</code> y sus dependencias si no se tiene instalado :</h4>
+
+<p><code>sudo apt install aptitude -y</code></p>
+
+<p><code>sudo aptitude install libapache2-mod-evasive -y</code></p>
+
+<p><img src="/assets/img/Captura de pantalla_2021-05-01_20-11-06.png" alt="Captura de pantalla_2021-05-01_20-11-06" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<h4 id="2-modificar-el-archivo-evasiveconf-para-que-quede-así">2. Modificar el archivo <code class="language-plaintext highlighter-rouge">evasive.conf</code> para que quede así:</h4>
+
+<p><img src="/assets/img/evasive-conf.png" alt="evasive-conf" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<h4 id="3-creamos-un-directorio-para-los-logs-y-cambiamos-propietario">3. Creamos un directorio para los logs y cambiamos propietario:</h4>
+
+<p><img src="/assets/img/mkdir-chonw.png" alt="mkdir-chonw" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<h4 id="4-reiniciamos-apache2">4. Reiniciamos apache2:</h4>
+
+<p><img src="/assets/img/restart.png" alt="restart" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<h4 id="5-iniciamos-el-test-del-propio-mod-evasive">5. Iniciamos el test del propio <code class="language-plaintext highlighter-rouge">mod-evasive</code>:</h4>
+
+<p><code>perl /usr/share/doc/libapache2-mod-evasive/examples/test.pl</code></p>
+
+<p><img src="/assets/img/test-pl.png" alt="test-pl" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<h4 id="6-intentamos-realizar-el-ataque-y-revisamos-los-logs">6. Intentamos realizar el ataque y revisamos los logs:</h4>
+
+<p><code>ab -n100 -c5 http://127.0.0.1/index.html:80</code></p>
+
+<p><img src="/assets/img/testeo.png" alt="testeo" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<p><img src="/assets/img/error-log.png" alt="error-log" /></p>
+
+<p>&lt;/br&gt;</p>
+
+<p><img src="/assets/img/acces-log.png" alt="acces-log" /></p>
+
+:ET

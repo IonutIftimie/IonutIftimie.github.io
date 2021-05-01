@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T18:44:37+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Autenticacion HTTP</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html" rel="alternate" type="text/html" title="Autenticacion HTTP" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html">&lt;p&gt;Para implementar una autenticación basicca se creara un fichero con el siguiente contenido:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-01T20:27:40+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Evitar ataque DoS</title><link href="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" rel="alternate" type="text/html" title="Evitar ataque DoS" /><published>2021-05-01T00:00:00+02:00</published><updated>2021-05-01T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html">&lt;h4 id=&quot;1-instalar-mod-evasive-y-sus-dependencias-si-no-se-tiene-instalado-&quot;&gt;1. Instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mod-evasive&lt;/code&gt; y sus dependencias si no se tiene instalado :&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt install aptitude -y&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo aptitude install libapache2-mod-evasive -y&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Captura de pantalla_2021-05-01_20-11-06.png&quot; alt=&quot;Captura de pantalla_2021-05-01_20-11-06&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-modificar-el-archivo-evasiveconf-para-que-quede-así&quot;&gt;2. Modificar el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;evasive.conf&lt;/code&gt; para que quede así:&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/evasive-conf.png&quot; alt=&quot;evasive-conf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-creamos-un-directorio-para-los-logs-y-cambiamos-propietario&quot;&gt;3. Creamos un directorio para los logs y cambiamos propietario:&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/mkdir-chonw.png&quot; alt=&quot;mkdir-chonw&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-reiniciamos-apache2&quot;&gt;4. Reiniciamos apache2:&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/restart.png&quot; alt=&quot;restart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-iniciamos-el-test-del-propio-mod-evasive&quot;&gt;5. Iniciamos el test del propio &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mod-evasive&lt;/code&gt;:&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;perl /usr/share/doc/libapache2-mod-evasive/examples/test.pl&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/test-pl.png&quot; alt=&quot;test-pl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;6-intentamos-realizar-el-ataque-y-revisamos-los-logs&quot;&gt;6. Intentamos realizar el ataque y revisamos los logs:&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;ab -n100 -c5 http://127.0.0.1/index.html:80&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/testeo.png&quot; alt=&quot;testeo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/error-log.png&quot; alt=&quot;error-log&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/acces-log.png&quot; alt=&quot;acces-log&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Instalar mod-evasive y sus dependencias si no se tiene instalado :</summary></entry><entry><title type="html">Autenticacion HTTP</title><link href="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html" rel="alternate" type="text/html" title="Autenticacion HTTP" /><published>2021-04-03T00:00:00+02:00</published><updated>2021-04-03T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/03/Autenticacion-HTTP.html">&lt;p&gt;Para implementar una autenticación basicca se creara un fichero con el siguiente contenido:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/autenticacion-3.png&quot; alt=&quot;autenticacion-3&quot; /&gt;&lt;/p&gt;
 
@@ -488,28 +536,4 @@
 
 &lt;h2 id=&quot;13-comprobación-localhost3000&quot;&gt;13. Comprobación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt;:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/localhost-3000-1613498040818.png&quot; alt=&quot;localhost-3000&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir rails:</summary></entry><entry><title type="html">Práctica Wordpress</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html" rel="alternate" type="text/html" title="Práctica Wordpress" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Wordpress.html">&lt;h2 id=&quot;práctica-wordpress&quot;&gt;Práctica Wordpress&lt;/h2&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-my_wordpress&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir my_wordpress&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/mkdir_wordpress.png&quot; alt=&quot;mkdir_wordpress&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-crear-el-archivo-docker-composeyml-en-el-directorio-del-proyecto&quot;&gt;2. Crear el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; en el directorio del proyecto:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/docker_compose-yml.png&quot; alt=&quot;docker_compose-yml&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-construir-el-proyecto-con-sudo-docker-compose-up--d&quot;&gt;3. Construir el proyecto con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose up -d&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Construir_el_Proyecto.png&quot; alt=&quot;Construir_el_Proyecto&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-comporbar-el-funcionamiento-localhost8000&quot;&gt;4. Comporbar el funcionamiento &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8000&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/loaclhost-8080.png&quot; alt=&quot;loaclhost-8080&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Práctica Wordpress</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/localhost-3000-1613498040818.png&quot; alt=&quot;localhost-3000&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir rails:</summary></entry></feed>
