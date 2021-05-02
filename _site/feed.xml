@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-01T20:27:40+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Evitar ataque DoS</title><link href="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" rel="alternate" type="text/html" title="Evitar ataque DoS" /><published>2021-05-01T00:00:00+02:00</published><updated>2021-05-01T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html">&lt;h4 id=&quot;1-instalar-mod-evasive-y-sus-dependencias-si-no-se-tiene-instalado-&quot;&gt;1. Instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mod-evasive&lt;/code&gt; y sus dependencias si no se tiene instalado :&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-02T14:24:42+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Blog de Ionut Iftimie</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Laboratorios(SQL_Injection)</title><link href="http://localhost:4000/jekyll/update/2021/05/02/Laboratorios(MySQL_Injection).html" rel="alternate" type="text/html" title="Laboratorios(SQL_Injection)" /><published>2021-05-02T00:00:00+02:00</published><updated>2021-05-02T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/05/02/Laboratorios(MySQL_Injection)</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/02/Laboratorios(MySQL_Injection).html">&lt;h4 id=&quot;1-obtener-datos-ocultos&quot;&gt;1. Obtener datos ocultos:&lt;/h4&gt;
+
+&lt;p&gt;​	Si queremos mostrar los datos ocultos de la siguiente pagina web.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-1-1.png&quot; alt=&quot;lab-1-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Simplemente añadiendo en la URL &lt;code&gt;'+OR+1=1--&lt;/code&gt; nos mostraria todos los datos ocultos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-1-2.png&quot; alt=&quot;lab-1-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-1-3.png&quot; alt=&quot;lab-1-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-subvertir-la-funcionalidad-de-la-pagina-web&quot;&gt;2. Subvertir la funcionalidad de la pagina web&lt;/h4&gt;
+
+&lt;p&gt;Sabiendo un nombre de usuario se puede intentar iniciar sesión sin saber la contraseña, para ello en este caso el usuario seria &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;administrator&quot;&lt;/code&gt; y le añadimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'--&lt;/code&gt; podriamos iniciar sesion (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;administrator'--&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-2-1.png&quot; alt=&quot;lab-2-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-2-2.png&quot; alt=&quot;lab-2-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-2-3.png&quot; alt=&quot;lab-2-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-determinar-el-numero-de-columnas&quot;&gt;3. Determinar el numero de columnas&lt;/h4&gt;
+
+&lt;p&gt;​	Si queremos determinar el numero de columnas de una tabla se puede hacer añadiendo en la URL &lt;code&gt;'+UNION+SELECT+NULL--&lt;/code&gt; añadiendo tantos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NULL&lt;/code&gt; como columnas hay.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-3-1.png&quot; alt=&quot;lab-3-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;img src=&quot;/assets/img/lab-3-2.png&quot; alt=&quot;lab-3-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-3-3.png&quot; alt=&quot;lab-3-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;img src=&quot;/../../Escritorio/lab-inje-sql/lab-3-5.png&quot; alt=&quot;lab-3-5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;​	O tambien se puede utilizando &lt;code&gt;'+ORDER+BY+3--&lt;/code&gt; incrementando el numero/disminuyedo segun la columnas que tenga.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-3-4.png&quot; alt=&quot;lab-3-4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;img src=&quot;/assets/img/lab-3-5-1619957790032.png&quot; alt=&quot;lab-3-5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-determinar-el-tipo-y-la-version&quot;&gt;4. Determinar el tipo y la version&lt;/h4&gt;
+
+&lt;p&gt;Para que nos muestre la version de la base de datos primero determinamos determinamos el número de columnas y si contienen texto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-1.png&quot; alt=&quot;lab-4-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ello añadimos la siguiente inyección en la URL &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'+UNION+SELECT+'abc','def'+FROM+dual--&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-2.png&quot; alt=&quot;lab-4-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-3.png&quot; alt=&quot;lab-4-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ya sabiendo esto usamos esta peticion a la base de datos &lt;code&gt;'+UNION+SELECT+BANNER,+NULL+FROM+v$version--&lt;/code&gt; para que nos devuelva la versión&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-4.png&quot; alt=&quot;lab-4-4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-5.png&quot; alt=&quot;lab-4-5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lab-4-6.png&quot; alt=&quot;lab-4-6&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Obtener datos ocultos:</summary></entry><entry><title type="html">Evitar ataque DoS</title><link href="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html" rel="alternate" type="text/html" title="Evitar ataque DoS" /><published>2021-05-01T00:00:00+02:00</published><updated>2021-05-01T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/01/Evitar-ataque-DoS.html">&lt;h4 id=&quot;1-instalar-mod-evasive-y-sus-dependencias-si-no-se-tiene-instalado-&quot;&gt;1. Instalar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mod-evasive&lt;/code&gt; y sus dependencias si no se tiene instalado :&lt;/h4&gt;
 
 &lt;p&gt;&lt;code&gt;sudo apt install aptitude -y&lt;/code&gt;&lt;/p&gt;
 
@@ -462,78 +546,4 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/Django_localhost.png&quot; alt=&quot;Django_localhost&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir django:</summary></entry><entry><title type="html">Práctica Rails</title><link href="http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails.html" rel="alternate" type="text/html" title="Práctica Rails" /><published>2021-02-10T00:00:00+01:00</published><updated>2021-02-10T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/10/Practica-Rails.html">&lt;h2 id=&quot;1-crear-el-directorio-del-proyecto-mkdir-rails&quot;&gt;1. Crear el directorio del proyecto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir rails&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Mkdir_Rails.png&quot; alt=&quot;Mkdir_Rails&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-crear-el-fichero-dockerfile-vi-dockerfile&quot;&gt;2. Crear el fichero Dockerfile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Dockerfile&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Dockerfile_bien.png&quot; alt=&quot;Dockerfile_bien&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-crear-el-fichero-gemfile-vi-gemfile&quot;&gt;3. Crear el fichero Gemfile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Gemfile&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Gemfile.png&quot; alt=&quot;Gemfile&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-crear-el-fichero-gemfilelock-touch-gemfilelock&quot;&gt;4. Crear el fichero Gemfile.lock &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch Gemfile.lock&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Gemfile-lock.png&quot; alt=&quot;Gemfile-lock&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;5-crear-el-archivo-entrypoint-vi-entrypoint&quot;&gt;5. Crear el archivo Entrypoint &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi Entrypoint&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Entrypoint.png&quot; alt=&quot;Entrypoint&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;6-crear-el-archivo-docker-composeyml-vi-docker-composeyml&quot;&gt;6. Crear el archivo docker-compose.yml &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi docker-compose.yml&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_compose-yml_bien.png&quot; alt=&quot;Docker_compose-yml_bien&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;7-generar-el-esqueleto-de-rails-docker-compose-run---no-deps-web-rails-new----force---databasepostgresql&quot;&gt;7. Generar el esqueleto de Rails &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose run --no-deps web rails new . --force --database=postgresql&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Docker_compose_run-1613498075658.png&quot; alt=&quot;Docker_compose_run&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;8-cambiar-el-propietario-sudo-chown--r-useruser-&quot;&gt;8. Cambiar el propietario &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo chown -R $USER:$USER .&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Chown-1613497542119.png&quot; alt=&quot;Chown&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;9-contruir-la-imagen-sudo-docker-compose-build&quot;&gt;9. Contruir la imagen &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose build&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/Build.png&quot; alt=&quot;Build&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;10--reemplazar-el-contenido-de-configdatabaseyml&quot;&gt;10.  Reemplazar el contenido de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config/database.yml&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/databaseconfig_bien.png&quot; alt=&quot;databaseconfig_bien&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;11--iniciamos-la-app-docker-compose-up&quot;&gt;11.  Iniciamos la app &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/up-1613497877519.png&quot; alt=&quot;up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;12-crear-un-base-de-datos-docker-compose-run-web-rake-dbcreate&quot;&gt;12. Crear un base de datos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose run web rake db:create&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/database_run.png&quot; alt=&quot;database_run&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;13-comprobación-localhost3000&quot;&gt;13. Comprobación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:3000&lt;/code&gt;:&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/localhost-3000-1613498040818.png&quot; alt=&quot;localhost-3000&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir rails:</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/Django_localhost.png&quot; alt=&quot;Django_localhost&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">1. Crear el directorio del proyecto mkdir django:</summary></entry></feed>
