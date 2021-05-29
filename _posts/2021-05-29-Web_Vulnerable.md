@@ -12,7 +12,7 @@ Con la página web vulnerable de bWAPP hay muchas formas de aprovecharlas, algun
 
 `<h1>Hi</h1>`
 
-![html_injection](/ionut/Imágenes/html_injection.png)
+![html_injection](/../../Imágenes/html_injection.png)
 
 
 
@@ -22,7 +22,7 @@ Con la página web vulnerable de bWAPP hay muchas formas de aprovecharlas, algun
 
 `<script>alert(1)</script>`
 
-![xss_](/ionut/Imágenes/xss_.png)
+![xss_](/assets/img/xss_.png)
 
 <br>
 
@@ -32,5 +32,4 @@ Con la página web vulnerable de bWAPP hay muchas formas de aprovecharlas, algun
 
 `172.0.0.1; cat /etc/passwd;`
 
-![command_injection](/ionut/Imágenes/command_injection.png)
-
+![command_injection](/assets/img/command_injection.png)
