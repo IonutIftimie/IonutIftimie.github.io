@@ -12,9 +12,9 @@ Con la página web vulnerable de bWAPP hay muchas formas de aprovecharlas, algun
 
 `<h1>Hi</h1>`
 
-![html_injection](/../../Imágenes/html_injection.png)
 
 
+![html_injection](/assets/img/html_injection-1622301540726.png)
 
 <br>
 
