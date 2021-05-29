@@ -14,7 +14,7 @@ Utilizando la herramienta ZAP contra la pagina bWAPP podemos realizar un ataque 
 
 Selecionamos el diccionario
 
-![contraseña](/ionut/Escritorio/contraseña.png)
+![contraseña](/assets/img/contraseña.png)
 
 <br>
 
@@ -22,4 +22,4 @@ Y finalmente encontro la contraseña "bee"
 
 
 
-![contraseña2](/ionut/Escritorio/contraseña2.png)
+![contraseña2](/assets/img/contraseña2.png)
